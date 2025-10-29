@@ -1,0 +1,10 @@
+packages:
+  # 组件库文档
+  - 'docs'
+  # 组件库测试单元
+  - 'examples/*'
+  # packages目录下每个子目录都是组件包
+  - 'packages/*'
+
+# 启用该选项后，本地可用的软件包将被链接到 node_modules 中而不是从注册源下载。 这在 monorepo 中非常方便。 如果你需要本地包也链接到子依赖项，可以使用 deep 设置。
+linkWorkspacePackages: true

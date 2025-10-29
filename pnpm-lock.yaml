@@ -1,0 +1,25 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@vue3-ui-library/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@vue3-ui-library/hooks':
+        specifier: workspace:^
+        version: link:packages/hooks
+      '@vue3-ui-library/utils':
+        specifier: workspace:^
+        version: link:packages/utils
+
+  packages/components: {}
+
+  packages/hooks: {}
+
+  packages/utils: {}
