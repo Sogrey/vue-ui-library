@@ -4,10 +4,13 @@
     <button :class="[
         ns.b(), 
         ns.m(type), 
-        ns.is('round', round)
+        ns.is('round', round),
+        ns.is('disabled', disabled),
+        ns.m('size', size), 
+        ns.is('cricle', cricle)
     ]" :type="nativeType">
         <!-- 使用插槽来渲染按钮内容 -->
-        <slot>这是测试按钮</slot>{{ props.round }}
+        <slot>这是测试按钮</slot>
     </button>
 </template>
 <script setup>
@@ -32,7 +35,23 @@ const props = defineProps({
     round: {
         type: Boolean,
         default: false
+    },
+    // 是否禁用
+    disabled: {
+        type: Boolean,
+        default: false
+    },
+    // 按钮尺寸：mini, small, medium, large
+    size: {
+        type: String,
+        default: 'medium'
+    },
+    // 是否圆形
+    cricle:{
+        type: Boolean,
+        default: false
     }
+
 })
 
 </script>

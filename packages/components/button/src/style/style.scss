@@ -43,9 +43,57 @@
         cursor: not-allowed;
     }
 
+    // 按钮尺寸：mini, small, medium, large
+    &.size-mini {
+        height: 24px;
+        font-size: 12px;
+
+        &.is-cricle {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.size-small {
+        height: 32px;
+        font-size: 14px;
+
+        &.is-cricle {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &.size-medium {
+        height: 40px;
+        font-size: 16px;
+
+        &.is-cricle {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &.size-large {
+        height: 48px;
+        font-size: 18px;
+
+        &.is-cricle {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
     // 圆形按钮
     &.is-round {
         border-radius: 100px;
+    }
+
+    &.is-cricle {
+        min-width: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 0;
     }
 }
 
