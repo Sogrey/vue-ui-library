@@ -33,7 +33,16 @@ import SButton from '@vue3-ui-library/components/button'
     <s-button type="error" disabled>错误</s-button>
     <s-button type="text" disabled>文本</s-button>
   </p>
-
+  <p> Round </p>
+  <p class="row-gap">
+    <s-button round>默认按钮</s-button>
+    <s-button type="primary" round>主要</s-button>
+    <s-button type="success" round>成功</s-button>
+    <s-button type="info" round>信息</s-button>
+    <s-button type="warning" round>警告</s-button>
+    <s-button type="error" round>错误</s-button>
+    <s-button type="text" round>文本</s-button>
+  </p>
 </template>
 
 <style scoped>
