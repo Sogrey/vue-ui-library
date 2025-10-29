@@ -1,0 +1,209 @@
+// 基础按钮样式
+.sgy-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    min-width: 80px;
+    background-color: #fff;
+    border: 2px solid #e2e6f1;
+    font-size: 14px;
+    color: #4d5859;
+    padding: 0 16px;
+    box-sizing: border-box;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+    vertical-align: middle;
+
+    &:hover {
+        background-color: #f5f7fa;
+        border-color: #c0c4cc;
+    }
+
+    &:active {
+        background-color: #ebeef5;
+        border-color: #a0a4ad;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(224, 230, 241, 0.3);
+    }
+
+    &:disabled {
+        background-color: #f5f7fa;
+        border-color: #e4e7ed;
+        color: #c0c4cc;
+        cursor: not-allowed;
+    }
+}
+
+// 主要按钮
+.sgy-button.sgy-button--primary {
+    background-color: #409eff !important;
+    border-color: #409eff !important;
+    color: #ffffff !important;
+
+    &:hover {
+        background-color: #66b1ff !important;
+        border-color: #66b1ff !important;
+    }
+
+    &:active {
+        background-color: #337ecc !important;
+        border-color: #337ecc !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #a0cfff !important;
+        border-color: #a0cfff !important;
+        color: #ffffff !important;
+    }
+}
+
+// 成功按钮
+.sgy-button.sgy-button--success {
+    background-color: #67c23a !important;
+    border-color: #67c23a !important;
+    color: #ffffff !important;
+
+    &:hover {
+        background-color: #85ce61 !important;
+        border-color: #85ce61 !important;
+    }
+
+    &:active {
+        background-color: #529b2e !important;
+        border-color: #529b2e !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(103, 194, 58, 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #b3e19d !important;
+        border-color: #b3e19d !important;
+        color: #ffffff !important;
+    }
+}
+
+// 警告按钮
+.sgy-button.sgy-button--warning {
+    background-color: #e6a23c !important;
+    border-color: #e6a23c !important;
+    color: #ffffff !important;
+
+    &:hover {
+        background-color: #ebb563 !important;
+        border-color: #ebb563 !important;
+    }
+
+    &:active {
+        background-color: #b88230 !important;
+        border-color: #b88230 !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(230, 162, 60, 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #f3d19e !important;
+        border-color: #f3d19e !important;
+        color: #ffffff !important;
+    }
+}
+
+// 错误按钮
+.sgy-button.sgy-button--error {
+    background-color: #f56c6c !important;
+    border-color: #f56c6c !important;
+    color: #ffffff !important;
+
+    &:hover {
+        background-color: #f78989 !important;
+        border-color: #f78989 !important;
+    }
+
+    &:active {
+        background-color: #c45656 !important;
+        border-color: #c45656 !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(245, 108, 108, 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #fab6b6 !important;
+        border-color: #fab6b6 !important;
+        color: #ffffff !important;
+    }
+}
+
+// 信息按钮
+.sgy-button.sgy-button--info {
+    background-color: #909399 !important;
+    border-color: #909399 !important;
+    color: #ffffff !important;
+
+    &:hover {
+        background-color: #a6a9ad !important;
+        border-color: #a6a9ad !important;
+    }
+
+    &:active {
+        background-color: #73767a !important;
+        border-color: #73767a !important;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px rgba(144, 147, 153, 0.2) !important;
+    }
+
+    &:disabled {
+        background-color: #c8c9cc !important;
+        border-color: #c8c9cc !important;
+        color: #ffffff !important;
+    }
+}
+
+// 文字按钮
+.sgy-button.sgy-button--text {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #409eff !important;
+    min-width: auto !important;
+    padding: 0 8px !important;
+
+    &:hover {
+        background-color: rgba(64, 158, 255, 0.1) !important;
+        color: #66b1ff !important;
+    }
+
+    &:active {
+        background-color: rgba(64, 158, 255, 0.2) !important;
+        color: #337ecc !important;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    &:disabled {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: #c0c4cc !important;
+    }
+}

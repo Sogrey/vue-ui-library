@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue3-ui-library/components": "workspace:*",
     "vue": "^3.5.22"
   },
   "devDependencies": {
