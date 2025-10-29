@@ -4,23 +4,25 @@ const defaultNamespace = 'sgy'
 
 export const useNamespace = (block) => {
     const namespace = defaultNamespace
-    
+
     const b = () => {
         return `${namespace}-${block}`
     }
-    
-    const e = (element) => {
-        return `${namespace}-${block}__${element}`
-    }
-    
+
+    // 判断是否存在modifier，存在则返回对应的class，否则返回空字符串
     const m = (modifier) => {
-        return `${namespace}-${block}--${modifier}`
+        return modifier ? `${namespace}-${block}--${modifier}` : ''
+    }
+
+    // 判断boolean值，返回对应的class
+    const is = (key,value) => {
+        return value ? `is-${key}` : ''
     }
 
     return {
         namespace,
         b,
-        e,
-        m
+        m,
+        is
     }
 }

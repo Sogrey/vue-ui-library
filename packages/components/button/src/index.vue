@@ -1,7 +1,11 @@
 <!-- button 按钮组件的 .vue 源代码 -->
 
 <template>
-    <button :class="[ns.b(), type ? ns.m(type) : '', round ? 'is-round' : '']" :type="nativeType">
+    <button :class="[
+        ns.b(), 
+        ns.m(type), 
+        ns.is('round', round)
+    ]" :type="nativeType">
         <!-- 使用插槽来渲染按钮内容 -->
         <slot>这是测试按钮</slot>{{ props.round }}
     </button>
