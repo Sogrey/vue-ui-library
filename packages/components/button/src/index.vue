@@ -11,5 +11,11 @@ defineOptions({
     name: 's-button'
 })
 
+import { useNamespace } from '@vue3-ui-library/hooks'
+
+const ns = useNamespace()
+
+console.log('当前命名空间是',ns)
+
 </script>
 <style scoped></style>
