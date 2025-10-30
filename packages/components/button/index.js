@@ -6,8 +6,8 @@ import Button from './src/index.vue'
 import { componentInstall } from '@vue3-ui-library/utils'
 
 // 按需导出
-export const VButton = componentInstall(Button)
+export const SButton = componentInstall(Button)
 
 // 默认导出
-export default VButton
+export default SButton
 

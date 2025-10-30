@@ -6,8 +6,8 @@ import Input from './src/index.vue'
 import { componentInstall } from '@vue3-ui-library/utils'
 
 // 按需导出
-export const VInput = componentInstall(Input)
+export const SInput = componentInstall(Input)
 
 // 默认导出
-export default VInput
+export default SInput
 
