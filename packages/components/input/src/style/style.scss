@@ -1,0 +1,14 @@
+.input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: text;
+}
+
+.input.default {
+  height: 40px;
+}
+
+.input.large {
+  height: 60px;
+}

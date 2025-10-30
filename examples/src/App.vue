@@ -1,6 +1,26 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 import SButton from '@vue3-ui-library/components/button'
+import SInput from '@vue3-ui-library/components/input'
+import { ref } from 'vue'
+
+// 响应式数据
+const inputValue = ref('')
+const inputValue2 = ref('')
+const inputValue3 = ref('')
+
+// 事件处理函数
+const handleInput = (value) => {
+  console.log('Input 事件:', value)
+}
+
+const handleChange = (value) => {
+  console.log('Change 事件:', value)
+}
+
+const handleCustomInput = (value) => {
+  console.log('自定义处理:', value)
+}
 </script>
 
 <template>
@@ -42,7 +62,7 @@ import SButton from '@vue3-ui-library/components/button'
     <s-button type="warning" round>警告</s-button>
     <s-button type="error" round>错误</s-button>
     <s-button type="text" round>文本</s-button>
-  </p>  
+  </p>
   <p> Cricle </p>
   <p class="row-gap">
     <s-button cricle>默认按钮</s-button>
@@ -52,6 +72,53 @@ import SButton from '@vue3-ui-library/components/button'
     <s-button type="warning" cricle size="large">4</s-button>
     <s-button type="error" cricle>错误</s-button>
     <s-button type="text" cricle>文本</s-button>
+  </p>
+  <p> Input - 基本使用 </p>
+  <p class="row-gap">
+    <s-input placeholder="基本输入框"/>
+  </p>
+
+  <p> Input - v-model 双向绑定 </p>
+  <p class="row-gap">
+    <s-input v-model="inputValue" placeholder="v-model 绑定"/>
+    <span>输入值: {{ inputValue }}</span>
+  </p>
+
+  <p> Input - 事件监听 </p>
+  <p class="row-gap">
+    <s-input 
+      v-model="inputValue2" 
+      placeholder="监听 input 事件"
+      @input="handleInput"
+    />
+    <span>输入值: {{ inputValue2 }}</span>
+  </p>
+
+  <p> Input - 多个事件监听 </p>
+  <p class="row-gap">
+    <s-input 
+      v-model="inputValue3" 
+      placeholder="监听多个事件"
+      @input="handleCustomInput"
+      @change="handleChange"
+    />
+    <span>输入值: {{ inputValue3 }}</span>
+  </p>
+
+  <p> Input - 不同尺寸 </p>
+  <p class="row-gap">
+    <s-input size="mini" placeholder="mini 尺寸"/>
+    <s-input size="small" placeholder="small 尺寸"/>
+    <s-input size="default" placeholder="default 尺寸"/>
+    <s-input size="large" placeholder="large 尺寸"/>
+  </p>
+
+  <p> Input - 不同类型 </p>
+  <p class="row-gap">
+    <s-input type="text" placeholder="文本输入"/>
+    <s-input type="password" placeholder="密码输入"/>
+    <s-input type="email" placeholder="邮箱输入"/>
+    <s-input type="number" placeholder="数字输入"/>
   </p>
 </template>
 
@@ -71,7 +138,7 @@ import SButton from '@vue3-ui-library/components/button'
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
-.row-gap{
+.row-gap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
