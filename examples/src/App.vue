@@ -22,18 +22,23 @@ const handleChange = (value) => {
 const handleCustomInput = (value) => {
   console.log('自定义处理:', value)
 }
+
+// 按钮点击事件处理
+const handleButtonClick = (event, buttonType = '默认') => {
+  console.log(`按钮点击: ${buttonType}按钮`, event)
+}
 </script>
 
 <template>
   <p> Basic Usage </p>
   <p class="row-gap">
-    <s-button>默认按钮</s-button>
-    <s-button type="primary">主要</s-button>
-    <s-button type="success">成功</s-button>
-    <s-button type="info">信息</s-button>
-    <s-button type="warning">警告</s-button>
-    <s-button type="error">错误</s-button>
-    <s-button type="text">文本</s-button>
+    <s-button @click="handleButtonClick($event, '默认')">默认按钮</s-button>
+    <s-button type="primary" @click="handleButtonClick($event, '主要')">主要</s-button>
+    <s-button type="success" @click="handleButtonClick($event, '成功')">成功</s-button>
+    <s-button type="info" @click="handleButtonClick($event, '信息')">信息</s-button>
+    <s-button type="warning" @click="handleButtonClick($event, '警告')">警告</s-button>
+    <s-button type="error" @click="handleButtonClick($event, '错误')">错误</s-button>
+    <s-button type="text" @click="handleButtonClick($event, '文本')">文本</s-button>
   </p>
   <p> Disabled </p>
   <p class="row-gap">

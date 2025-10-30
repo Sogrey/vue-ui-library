@@ -1,14 +1,45 @@
+@use '../../../theme/index.scss';
+
 .input {
-  padding: 8px 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: var(--sgy-spacing-sm, 8px) var(--sgy-spacing-md, 16px);
+  border: var(--sgy-border-width-thin, 1px) solid var(--sgy-border-color, #ccc);
+  border-radius: var(--sgy-border-radius-small, 4px);
   cursor: text;
+  font-size: var(--sgy-font-size-default, 16px);
+  color: var(--sgy-text-primary-color, #4d5859);
+  background-color: var(--sgy-white-color, #fff);
+  box-sizing: border-box;
+  
+  &:focus {
+    outline: none;
+    border-color: var(--sgy-primary-color, #409eff);
+    box-shadow: var(--sgy-shadow-focus, 0 0 0 2px rgba(64, 158, 255, 0.2));
+  }
+  
+  &:disabled {
+    background-color: var(--sgy-background-disabled-color, #f5f7fa);
+    border-color: var(--sgy-border-color, #e4e7ed);
+    color: var(--sgy-text-disabled-color, #c0c4cc);
+    cursor: not-allowed;
+  }
 }
 
-.input.default {
-  height: 40px;
+.input.size-mini {
+  height: var(--sgy-input-height-mini, 32px);
+  font-size: var(--sgy-font-size-mini, 12px);
 }
 
-.input.large {
-  height: 60px;
+.input.size-small {
+  height: var(--sgy-input-height-small, 36px);
+  font-size: var(--sgy-font-size-small, 14px);
+}
+
+.input.size-default {
+  height: var(--sgy-input-height-default, 40px);
+  font-size: var(--sgy-font-size-default, 16px);
+}
+
+.input.size-large {
+  height: var(--sgy-input-height-large, 48px);
+  font-size: var(--sgy-font-size-large, 18px);
 }

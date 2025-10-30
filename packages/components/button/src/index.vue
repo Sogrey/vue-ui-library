@@ -8,7 +8,7 @@
         // ns.is('disabled', disabled),
         ns.m('size', size), 
         ns.is('cricle', cricle)
-    ]" :type="nativeType" :disabled="disabled">
+    ]" :type="nativeType" :disabled="disabled" @click="onClick">
         <!-- 使用插槽来渲染按钮内容 -->
         <slot>这是测试按钮</slot>
     </button>
@@ -53,6 +53,16 @@ const props = defineProps({
     }
 
 })
+
+// 定义 emits
+const emit = defineEmits(['click'])
+
+// 点击事件处理
+const onClick = (event) => {
+  if (!props.disabled) {
+    emit('click', event)
+  }
+}
 
 </script>
 <style scoped src="./style/style.scss"></style>

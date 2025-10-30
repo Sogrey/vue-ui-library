@@ -1,0 +1,96 @@
+// Vue3 UI Library 主题变量定义
+// 颜色主题变量
+:root {
+  // 主色调
+  --sgy-primary-color: #409eff;
+  --sgy-primary-light-color: #66b1ff;
+  --sgy-primary-dark-color: #337ecc;
+  --sgy-primary-disabled-color: #a0cfff;
+  --sgy-primary-color-rgb: 64, 158, 255;
+  
+  // 成功色
+  --sgy-success-color: #67c23a;
+  --sgy-success-light-color: #85ce61;
+  --sgy-success-dark-color: #529b2e;
+  --sgy-success-disabled-color: #b3e19d;
+  --sgy-success-color-rgb: 103, 194, 58;
+  
+  // 警告色
+  --sgy-warning-color: #e6a23c;
+  --sgy-warning-light-color: #ebb563;
+  --sgy-warning-dark-color: #b88230;
+  --sgy-warning-disabled-color: #f3d19e;
+  --sgy-warning-color-rgb: 230, 162, 60;
+  
+  // 错误色
+  --sgy-error-color: #f56c6c;
+  --sgy-error-light-color: #f78989;
+  --sgy-error-dark-color: #c45656;
+  --sgy-error-disabled-color: #fab6b6;
+  --sgy-error-color-rgb: 245, 108, 108;
+  
+  // 信息色
+  --sgy-info-color: #909399;
+  --sgy-info-light-color: #a6a9ad;
+  --sgy-info-dark-color: #73767a;
+  --sgy-info-disabled-color: #c8c9cc;
+  --sgy-info-color-rgb: 144, 147, 153;
+  
+  // 中性色
+  --sgy-white-color: #ffffff;
+  --sgy-black-color: #000000;
+  --sgy-text-primary-color: #4d5859;
+  --sgy-text-secondary-color: #606266;
+  --sgy-text-disabled-color: #c0c4cc;
+  --sgy-border-color: #e2e6f1;
+  --sgy-border-light-color: #c0c4cc;
+  --sgy-border-dark-color: #a0a4ad;
+  --sgy-background-color: #f5f7fa;
+  --sgy-background-light-color: #ebeef5;
+  --sgy-background-disabled-color: #f5f7fa;
+  
+  // 尺寸变量
+  --sgy-font-size-mini: 12px;
+  --sgy-font-size-small: 14px;
+  --sgy-font-size-default: 16px;
+  --sgy-font-size-large: 18px;
+  
+  // 按钮尺寸
+  --sgy-button-height-mini: 24px;
+  --sgy-button-height-small: 32px;
+  --sgy-button-height-medium: 40px;
+  --sgy-button-height-large: 48px;
+  
+  // 输入框尺寸
+  --sgy-input-height-mini: 32px;
+  --sgy-input-height-small: 36px;
+  --sgy-input-height-default: 40px;
+  --sgy-input-height-large: 48px;
+  
+  // 边框尺寸
+  --sgy-border-radius-small: 4px;
+  --sgy-border-radius-default: 6px;
+  --sgy-border-radius-large: 8px;
+  --sgy-border-radius-round: 100px;
+  --sgy-border-radius-circle: 50%;
+  
+  // 间距
+  --sgy-spacing-xs: 4px;
+  --sgy-spacing-sm: 8px;
+  --sgy-spacing-md: 16px;
+  --sgy-spacing-lg: 24px;
+  --sgy-spacing-xl: 32px;
+  
+  // 边框宽度
+  --sgy-border-width-thin: 1px;
+  --sgy-border-width-normal: 2px;
+  --sgy-border-width-thick: 3px;
+  
+  // 阴影
+  --sgy-shadow-focus: 0 0 0 2px rgba(64, 158, 255, 0.2);
+  --sgy-shadow-primary: 0 0 0 2px rgba(64, 158, 255, 0.2);
+  --sgy-shadow-success: 0 0 0 2px rgba(103, 194, 58, 0.2);
+  --sgy-shadow-warning: 0 0 0 2px rgba(230, 162, 60, 0.2);
+  --sgy-shadow-error: 0 0 0 2px rgba(245, 108, 108, 0.2);
+  --sgy-shadow-info: 0 0 0 2px rgba(144, 147, 153, 0.2);
+}
